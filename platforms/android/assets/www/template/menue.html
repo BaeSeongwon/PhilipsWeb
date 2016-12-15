@@ -1,0 +1,19 @@
+<div class="menue">
+    <div class="menue-img">
+        <div class="profil-container">
+            <div class="profil-img"></div>
+            <span>{{loginId}}</span>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item" ng-click="clickHome()">Home</li>
+        <li class="list-group-item" ng-click="clickLootin()">루틴</li>
+        <li class="list-group-item" ng-click="clickRaspberry()">라즈베리</li>
+        <li class="list-group-item" ng-click="clickEtc()">더보기</li>
+    </ul>
+    <div style="position: absolute; bottom: 0px; padding: 15px 10px 15px 10px; width: 100%;">
+        <span ng-if="$cookies.get('id') == undefined" style="float: left" ng-click="clickLogin()">Login</span>
+        <span ng-if="$cookies.get('id') != undefined" style="float: left" ng-click="clickLogout()">Logout</span>
+        <span style="float: right;" ng-click="clickRegist()">회원가입</span>
+    </div>
+</div>

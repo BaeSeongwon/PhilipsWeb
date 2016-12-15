@@ -1,0 +1,90 @@
+<div class="addHueTmpl">
+    <header style="margin-bottom: 15px;">
+        <div style="width: 100%; padding: 10px 10px 10px 10px; text-align: center;">
+            <span class="glyphicon glyphicon-remove" style="font-size: 20px; float: left;" ng-click="clickRemove()"></span>
+            <span style="font-size: 16px;">방 유형</span>
+            <span class="glyphicon glyphicon-ok" style="font-size: 20px; float: right;" ng-click="clickTypeChoice()"></span>
+        </div>
+    </header>
+    <section style="width: 100%; height: 87%;">
+        <table class="table" style="height: 100%; vertical-align: middle;">
+            <tr style="vertical-align: middle">
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('거실',$event)">
+                    <span>거실</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('주방',$event)">
+                    <span>주방</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('식당',$event)">
+                    <span>식당</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('침실',$event)">
+                    <span>침실</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('어린이 침실',$event)">
+                    <span>어린이 침실</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('욕실',$event)">
+                    <span>욕실</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('아기방',$event)">
+                    <span>아기방</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('레크레이션 룸',$event)">
+                    <span>레크레이션 룸</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('사무실',$event)">
+                    <span>사무실</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('체력 단련실',$event)">
+                    <span>체력 단련실</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('복도',$event)">
+                    <span>복도</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('화장실',$event)">
+                    <span>화장실</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('현관문',$event)">
+                    <span>현관문</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('차고',$event)">
+                    <span>차고</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('테라스',$event)">
+                    <span>테라스</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('정원',$event)">
+                    <span>정원</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('진입로',$event)">
+                    <span>진입로</span>
+                </td>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('간이 차고',$event)">
+                    <span>간이 차고</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="roomTypeTd" style="vertical-align: middle" ng-click="clickType('기타',$event)">
+                    <span>기타</span>
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </section>
+</div>
