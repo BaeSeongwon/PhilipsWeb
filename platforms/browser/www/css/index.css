@@ -34,6 +34,10 @@ body {
     width:100%;
 }
 
+html{
+    height: 100%;
+}
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -107,4 +111,77 @@ h1 {
     background-color: black;
     width: 100%;
     height: 70px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.menue{
+    left: -70%;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+}
+
+.menue-img{
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/menueImg.jpg");
+    background-size: cover;
+    z-index: 100;
+}
+
+.shadow{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.profil-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    background-image: url("../img/default-profil.png");
+    background-size: cover;
+}
+
+.profil-container{
+    position: absolute;
+    left: 50%;
+    top: 58px;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.logo-img{
+    background-image: url("../img/Huelogo.png");
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    margin: 0px auto;
+}
+
+.login-container{
+    width: 160px;
+    border-bottom: 1px solid;
+    border-color: rgb(160,160,255);
+    margin-bottom: 5px;
+}
+
+.input-style{
+    outline-style:none;
+    border: 0px;
+    width: 140px;
 }
