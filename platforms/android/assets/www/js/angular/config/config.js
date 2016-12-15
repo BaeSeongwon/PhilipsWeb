@@ -35,5 +35,9 @@ angular.module('App').config(function($routeProvider){
             templateUrl: 'template/roomType.html',
             controller: 'roomTypeCtrl'
         })
+        .when('/HueControl',{
+            templateUrl: 'template/HueControl.html',
+            controller: 'HueControlCtrl'
+        })
         .otherwise({redirectTo: '/home'});
 });

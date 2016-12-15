@@ -1,7 +1,7 @@
 /**
  * Created by Life on 2016-12-15.
  */
-angular.module('App').controller('roomTypeCtrl',function($scope){
+angular.module('App').controller('roomTypeCtrl',function($scope,HueService){
     $scope.choiceType;
     $scope.clickType = function(data,event){
         $('.roomTypeTd').each(function(index,element){
@@ -14,7 +14,8 @@ angular.module('App').controller('roomTypeCtrl',function($scope){
     }
 
     $scope.clickTypeChoice = function(){
-
+        HueService.setRoomType($scope.choiceType);
+        window.history.back();
     }
 
     $scope.clickRemove = function(){

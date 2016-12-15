@@ -1,7 +1,7 @@
 /**
  * Created by Life on 2016-12-01.
  */
-var app = angular.module('App',['ngRoute']);
+var app = angular.module('App',['ngRoute','ngCookies']);
 
 app.controller('AppCtrl',function($scope,$compile){
     $scope.clickMenue = function(){

@@ -28,12 +28,15 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/ripples.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap2-toggle.css">
+        <link rel="stylesheet" href="js/lib/bootstrap-colorpicker-master/dist/css/bootstrap-colorpicker.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
     </head>
@@ -48,7 +51,7 @@
         </header>
         <div class="addButton" ng-click="clickAddHue()"></div>
         <div id="shadowContainer"></div>
-        <div ng-view></div>
+        <div ng-view style="height: calc(100% - 35px)"></div>
         <aside>
             <menue></menue>
         </aside>
@@ -61,6 +64,10 @@
         <script type="text/javascript" src="js/lib/angular-route.js"></script>
         <script type="text/javascript" src="js/lib/bootstrap.js"></script>
         <script type="text/javascript" src="js/lib/ripples.js"></script>
+        <script type="text/javascript" src="js/lib/angular-cookies.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap2-toggle.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap-colorpicker-master/dist/js/bootstrap-colorpicker.js"></script>
+        <script type="text/javascript" src="js/lib/socket.io-client-master/dist/socket.io.js"></script>
         <!--라이브러리 end-->
         <script type="text/javascript" src="js/index.js"></script>
         <!--모듈 start-->
@@ -82,7 +89,17 @@
         <script type="text/javascript" src="js/angular/controller/registCtrl.js"></script>
         <script type="text/javascript" src="js/angular/controller/addHueCtrl.js"></script>
         <script type="text/javascript" src="js/angular/controller/roomTypeCtrl.js"></script>
+        <script type="text/javascript" src="js/angular/controller/HueControlCtrl.js"></script>
         <!--컨트롤러 end-->
+        <!--서비스 start-->
+        <script type="text/javascript" src="js/angular/service/HueService.js"></script>
+        <script type="text/javascript" src="js/angular/service/RaspService.js"></script>
+        <script type="text/javascript" src="js/angular/service/UserService.js"></script>
+        <!--서비스 end-->
+        <!--밸류 start-->
+        <script type="text/javascript" src="js/angular/value/IP.js"></script>
+        <script type="text/javascript" src="js/angular/value/CPE_IP.js"></script>
+        <!--밸류 end-->
         <!--스크립트 end-->
     </body>
 </html>

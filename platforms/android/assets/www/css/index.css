@@ -224,3 +224,20 @@ a:visited {
 .roomTypeTd{
     text-align: center;
 }
+
+.colorpicker-2x .colorpicker-saturation {
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+}
+
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+    width: 30px;
+    height: 280px;
+}
+
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div {
+    height: 30px;
+}

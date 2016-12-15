@@ -1,7 +1,7 @@
 /**
  * Created by Life on 2016-12-15.
  */
-angular.module('App').service('HueService',function(){
+angular.module('App').service('HueService',function(IP,$http){
     var Hue = {
         type : "Test",
         device : [
@@ -21,7 +21,9 @@ angular.module('App').service('HueService',function(){
     };
     return{
         setRoomType : setRoomType,
-        getRoomType : getRoomType
+        getRoomType : getRoomType,
+        onHue : onHue,
+        offHue : offHue
     }
 
     function setRoomType(data){
@@ -30,5 +32,25 @@ angular.module('App').service('HueService',function(){
 
     function getRoomType(){
         return Hue.type;
+    }
+
+    function onHue(){
+        var request = $http({
+            method : 'get',
+            url : IP + '/huecontrolOn'
+        });
+        return request.then(success);
+    }
+
+    function offHue(){
+        var request = $http({
+            method : 'get',
+            url : IP + '/huecontrolOff'
+        });
+        return request.then(success);
+    }
+
+    function success(res){
+        return res.data;
     }
 })
