@@ -1,0 +1,16 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -320,12 +320,12 @@
+       <workItem from="1480649191320" duration="3536000" />
+       <workItem from="1480754166383" duration="75000" />
+       <workItem from="1481630415580" duration="2794000" />
+-      <workItem from="1481768626849" duration="56000" />
++      <workItem from="1481768626849" duration="97000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="13597000" />
++    <option name="totallyTimeSpent" value="13638000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
