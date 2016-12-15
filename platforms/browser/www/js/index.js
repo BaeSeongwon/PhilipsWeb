@@ -32,8 +32,6 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(event) {
-        $.material.init();
-        alert(event);
     }
 };
 
