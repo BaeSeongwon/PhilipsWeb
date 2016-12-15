@@ -39,5 +39,9 @@ angular.module('App').config(function($routeProvider){
             templateUrl: 'template/HueControl.html',
             controller: 'HueControlCtrl'
         })
+        .when('/WemoDetail',{
+            templateUrl : 'template/WemoDetail.html',
+            controller : 'WemoDetailCtrl'
+        })
         .otherwise({redirectTo: '/home'});
 });

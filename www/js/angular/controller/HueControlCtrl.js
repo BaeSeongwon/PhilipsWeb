@@ -3,7 +3,7 @@
  */
 angular.module("App").controller('HueControlCtrl',function($scope,$timeout,IP){
     $scope.test = '#00AABB';
-    var socket = io('http://192.168.0.26:3000');
+    var socket = io('http://192.168.0.3:3000');
 
     $scope.result = $timeout(function(){
         $('#cp7').colorpicker({
