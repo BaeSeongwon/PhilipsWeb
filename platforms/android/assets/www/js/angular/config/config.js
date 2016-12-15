@@ -27,5 +27,13 @@ angular.module('App').config(function($routeProvider){
             templateUrl: 'template/regist.html',
             controller: 'registCtrl'
         })
+        .when('/addHue',{
+            templateUrl: 'template/addHue.html',
+            controller: 'addHueCtrl'
+        })
+        .when('/roomType',{
+            templateUrl: 'template/roomType.html',
+            controller: 'roomTypeCtrl'
+        })
         .otherwise({redirectTo: '/home'});
 });

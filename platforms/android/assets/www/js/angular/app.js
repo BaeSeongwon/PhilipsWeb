@@ -18,5 +18,9 @@ app.controller('AppCtrl',function($scope,$compile){
             });
             $('shadow').remove();
         };
+    };
+
+    $scope.clickAddHue = function(){
+        window.location.href = '#/addHue';
     }
 });
